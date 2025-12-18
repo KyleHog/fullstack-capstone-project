@@ -39,44 +39,44 @@ body::before {
     padding: 20px;
     background-color: rgba(240,240,240, 0.7);
     border-radius: 10px;
-
+}
 /* Task 4: Add styles for headings, paragraphs, and buttons */
  h1, h2 {
         font-size: 4rem; 
         color: #222; 
         margin-bottom: 0.5em;
         font-weight: 700;
+}
+.lead {
+    font-size: 1.75rem; 
+    color: #222; 
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.btn-primary {
+    background-color: #389bff; 
+    color: #FFFFFF; 
+    border: none;
+    padding: 1rem 2.5rem; 
+    border-radius: 30px; 
+    font-size: 1.25rem; 
+    font-weight: 700; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.1s;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #fd0a5f;
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem; 
+    }
+    h2 {
+        font-size: 2.5rem; 
     }
     .lead {
-        font-size: 1.75rem; 
-        color: #222; 
-        margin-bottom: 2rem;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    }
-    .btn-primary {
-        background-color: #389bff; 
-        color: #FFFFFF; 
-        border: none;
-        padding: 1rem 2.5rem; 
-        border-radius: 30px; 
         font-size: 1.25rem; 
-        font-weight: 700; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        transition: background-color 0.3s, transform 0.1s;
     }
-    .btn-primary:hover,
-    .btn-primary:focus {
-        background-color: #fd0a5f;
-        transform: scale(1.05);
-    }
-    @media (max-width: 768px) {
-        h1 {
-            font-size: 3rem; 
-        }
-        h2 {
-            font-size: 2.5rem; 
-        }
-        .lead {
-            font-size: 1.25rem; 
-        }
-    }
+}
